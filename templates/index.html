@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mission to Mars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+      </div>
+
+      <!-- Mars News -->
+      <div class = "row" id = "mars-news">
+        <div class = "col-md=12">
+          <h2>Latest Mars News</h2>
+          <h3 class = "media-heading">{{mars.title}}</h3>  <!-- title-->
+          <p class = "media-heading">{{mars.paragraph}}</p> <!-- mars paragraph-->
+          <img src = "{{featured_image_url}}">
+          <img src = "{{mars.img_url}}" style="width:600px;height:600px;">
+          <br>
+          <h3 class = "mars_weather">Mars Weather</h3> <!-- Mars Weather-->
+          <p>{{mars.mars_weather}}</p>
+          <h3 class = "mars_facts">Mars Facts</h3> 
+          <p>{{mars.mars_facts| safe}}</p>
+
+        </div>
+      </div>
+
+      <!-- Mars Featured Image? -->
+      <!-- Mars Facts -->
+      <!-- Mars Hemisphere-->
+
+      <dir class = "row" id = ></dir>
+
+      <dir></dir>
+
+
+    </div> 
+  </body>
+</html>
+
+
+<!--4 mars images>
+
+
